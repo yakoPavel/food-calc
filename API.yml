@@ -1,0 +1,33 @@
+openapi: "3.0.2"
+info:
+  title: Food calc API
+  version: "1.0"
+servers:
+  - url: https://api.server.test/v1
+components:
+  schemas:
+    testObject:
+      type: object
+      properties:
+        a:
+          type: string
+        b:
+          type: number
+
+paths:
+  /test:
+    get:
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/testObject"
+              examples:
+                example1:
+                  description: Example1
+                  value: '{ a: "hello", b: 1 }'
+                example2:
+                  description: Example2
+                  value: '{ a: "hi", b: 2 }'
