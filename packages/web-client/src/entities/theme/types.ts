@@ -2,7 +2,7 @@ import React from "react";
 
 type Color = string;
 
-type Theme = {
+export type Theme = {
   body: Color;
   text: {
     primary: Color;

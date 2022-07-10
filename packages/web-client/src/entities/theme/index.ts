@@ -5,3 +5,4 @@ export {
   useThemeName,
   useSetThemeName,
 } from "./model";
+export type { Theme } from "./types";
